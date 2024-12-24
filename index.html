@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DM Sports Agency</title>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/simple-lightbox.css">
+		<link rel="stylesheet" href="fonts/fa/css/all.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style-global.css">
+		<link rel="stylesheet" href="style-responsive.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		<script src="js/jquery.js"></script>
+		<script src="form/form.js"></script>
+	</head>
+
+
+
+	<body id="home">
+
+
+
+		<header>
+				<!-- 添加视频背景容器 -->
+				<div class="video-background">
+					<video autoplay muted loop playsinline>
+						<source src="images\video2.mp4" type="video/mp4">
+					</video>
+					<!-- 添加遮罩层 -->
+					<div class="overlay"></div>
+				</div>
+				
+				<!-- 在header中的video-background后添加 -->
+				<div class="banner-overlay">
+					<div class="container">
+						<div class="text">
+							<h1>DM sports agency</h1>
+							<h3>We make you opportunities</h3>
+							<br clear="all" />
+							<a href="#" class="btn">
+								Learn more <span class="fa-solid fa-angle-right"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="container df_c_v jcsb">
+					<a href="#home" class="logo">
+						<img src="images/logo.png" alt="Logo" style="width: 100px; height: auto;" />
+					</a>
+					<div class="menucontrols">
+						<a href="#" class="showmenu df_c_hv">
+							<span class="fa-solid fa-bars"></span>
+						</a>
+					</div>
+					<nav>
+						<a href="#" class="hidemenu df_c_hv">
+							<span class="fa-solid fa-times"></span>
+						</a>
+						<ul>
+							<li class="active"><a href="#home">Home</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+		<!-- 添加必要的CSS样式 -->
+		<style>
+			header {
+				position: relative;
+				overflow: hidden;
+				height: 100vh; /* 设置header高度为整个视窗高度 */
+			}
+
+			.video-background {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+			}
+
+			.video-background video {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.3); /* 半透明黑色遮罩 */
+			}
+
+			/* 确保其他内容在视频上层显示 */
+			.container {
+				position: relative;
+				z-index: 1;
+			}
+
+			.banner-overlay {
+				position: absolute;
+				bottom: 20%;
+				left: 0;
+				width: 100%;
+				z-index: 2;
+			}
+
+			.banner-overlay .text {
+				text-align: center;
+				color: white;
+				padding: 20px;
+			}
+
+			.banner-overlay h1 {
+				font-size: 3.5rem;
+				margin-bottom: 1rem;
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+			}
+
+			.banner-overlay h3 {
+				font-size: 1.8rem;
+				margin-bottom: 2rem;
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+			}
+
+			.banner-overlay .btn {
+				display: inline-block;
+				padding: 12px 30px;
+				color: white;
+				text-decoration: none;
+				border: 2px solid white;
+				border-radius: 25px;
+				transition: all 0.3s ease;
+			}
+
+			.banner-overlay .btn:hover {
+				background: rgba(255,255,255,0.2);
+			}
+		</style>
+
+
+
+
+		<!--
+<section class="banner flf bfr" style="background: url('images\logo.png') no-repeat center; background-size: cover;">
+			<div class="container">
+				<div class="text">
+					<h1>DM sports agency</h1>
+					<h3>We make you opportunities</h3>
+					<br clear="all" />
+					<a href="#" class="btn">
+						Learn more <span class="fa-solid fa-angle-right"></span>
+					</a>
+				</div>
+			</div>
+</section>
+-->
+<!-- BANNER -->
+
+
+
+
+
+
+
+		<section class="brands flf">
+    <div class="container">
+        <h2>Our Sponsors</h2>
+        <div class="brand-images">
+            <img src="images\channels4_profile.jpg" alt="">
+            <img src="images\puma.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<style>
+.brands {
+    padding: 50px 0;
+}
+
+.brands h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.brand-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* 图片之间的间距 */
+}
+
+.brand-images img {
+    max-width: 200px; /* 控制图片大小 */
+    height: auto;
+    object-fit: contain;
+}
+</style>
+		<!-- BRANDS -->
+
+
+
+
+
+
+		<section class="services flf" id="services">
+    <div class="container">
+        <h2>Our services</h2>
+        <h4></h4>
+
+        <div class="servicesitemswrap gallery">
+            <div class="item">
+                <div class="itemcontent">
+                    <div class="thumb carousel-container">
+                        <button class="carousel-button prev" id="prevButton1">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div id="carousel1" class="carousel">
+                            <img src="DM\DM\images\image1.jpg" alt="AAU Team">
+                        </div>
+                        <button class="carousel-button next" id="nextButton1">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <h3>AAU Team</h3>
+                    <p>The only Chinese team in the five major AAU brand leagues in the United States</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="itemcontent">
+                    <div class="thumb carousel-container">
+                        <button class="carousel-button prev" id="prevButton2">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div id="carousel2" class="carousel">
+                            <img src="images/微信图片_20241223005536.jpg" alt="DM spots agency">
+                        </div>
+                        <button class="carousel-button next" id="nextButton2">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <h3>DM spots agency</h3>
+                    <p>The mission of DM Sports Agency Limited is to provide talented young people with the opportunity to impact professional athletes and help them achieve Dreams.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.carousel-container {
+    position: relative;
+    width: 100%;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 第一个轮播图的图片数组
+    const carousel1Images = [
+        "images/image1.jpg",
+        "images/image2.jpg",
+        "images/image3.jpg"
+    ];
+    
+    // 第二个轮播图的图片数组
+    const carousel2Images = [
+        "images/微信图片_20241223005536.jpg",
+        "images/微信图片_20241223005607.jpg",
+        "images/微信图片_20241223005538.jpg"
+    ];
+
+    // 轮播图控制函数
+    function setupCarousel(carouselId, prevButtonId, nextButtonId, images) {
+        const carousel = document.getElementById(carouselId);
+        const prevButton = document.getElementById(prevButtonId);
+        const nextButton = document.getElementById(nextButtonId);
+        let currentIndex = 0;
+
+        // 更新图片显示
+        function updateCarousel() {
+            carousel.innerHTML = `<img src="${images[currentIndex]}" alt="Image ${currentIndex + 1}">`;
+        }
+
+        // 上一张按钮事件
+        prevButton.addEventListener("click", function() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = images.length - 1;
+            }
+            updateCarousel();
+        });
+
+        // 下一张按钮事件
+        nextButton.addEventListener("click", function() {
+            if (currentIndex < images.length - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            updateCarousel();
+        });
+
+        // 初始化显示第一张图片
+        updateCarousel();
+    }
+
+    // 初始化两个轮播图
+    setupCarousel("carousel1", "prevButton1", "nextButton1", carousel1Images);
+    setupCarousel("carousel2", "prevButton2", "nextButton2", carousel2Images);
+});
+</script>
+
+		<!-- SERVICES -->
+
+
+		
+
+
+
+		<!--
+<section class="about flf" id="about">
+            <div class="container df_c_v jcsb">
+                <div class="text">
+                    <h2>About Us</h2>
+                    <p>
+                    </p>
+
+                    <div class="mission">
+                        <h3>Mission</h3>
+                        <p>
+                            The mission of DM Sports Agency Limited is to provide talented young people with the opportunity to compete in professional athletes and help them achieve dreams. We believe that every teenager with a basketball dream has the potential to succeed through our platform.
+                        </p>
+                        <h3>Core Values</h3>
+                        <ul>
+                        
+                            <li><strong>Professional:</strong> We always uphold the highest industry standards and provide the most professional service and support for athletes.</li>
+                            <li><strong>Efficient:</strong> We win valuable time and opportunities for our customers with efficient workflow and service.</li>
+                            <li><strong>Pragmatic:</strong> In every cooperation, we focus on practical results and strive for the greatest personal interests and physical health of athletes.</li>
+                            <li><strong>Responsibility:</strong> The company not only cares about the growth and development of employees, but also contributes to the community through social responsibility.</li>
+                            <li><strong>Innovation:</strong> We continue to explore and innovate, optimize the service process, and bring a better experience for athletes and customers.</li>
+                            <li><strong>Win-win:</strong> </li>
+                        </ul>
+                        <h3>Service Concept</h3>
+                        <p>
+                            We always put the physical health and personal interests of athletes in the first place, and support them in achieving their goals.
+                        </p>
+                    </div>
+
+                    <div class="video">
+                        <video controls>
+                            <source src="path/to/your/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="summary">
+                        <h3>Summary</h3>
+                        <p>
+                            The mission of DM Sports Agency Limited is to provide talented young people with the opportunity to compete in professional athletes and help them achieve dreams. We believe that every teenager with a basketball dream has the potential to succeed through our platform.
+                        </p>
+                    </div>
+
+                    <p>
+    
+                    </p>
+                </div>
+            </div>
+        </section>
+-->
+
+		
+<section class="contact flf" id="contact" style="background-color: #f5f5f5; padding: 20px 0;">
+			<div class="container" style="max-width: 600px; margin: 0 auto;">
+				<h2 style="font-size: 24px; text-align: center;">Let's Talk</h2>
+				<h5 style="font-size: 16px; text-align: center;">Use Below Form or Email me direct: <a href="mailto:#">Sportsagencydmsportsagency0716@gmail.com <br> Chinachinaelite0716@gmail.com</a></h5>
+
+				<!-- 添加社交媒体链接 -->
+				<div class="social-links" style="text-align: center; margin: 20px 0;">
+					<a href="你的TikTok链接" target="_blank" style="margin: 0 10px; font-size: 24px; color: #000;">
+						<i class="fab fa-tiktok"></i>
+					</a>
+					<a href="https://www.instagram.com/china_elite_aau/profilecard/?igsh=NTc4MTIwNjQ2YQ==" target="_blank" style="margin: 0 10px; font-size: 24px; color: #000;">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+				
+	<footer class="flf">
+			<div class="container">
+
+				<div class="copyright">
+					Copyright &copy; <span id="footeryear"></span> <a href="#">DMsport</a>
+				</div>
+				<div class="social df_c_v">
+					Follow
+					<a href="#"><span class="fa-brands fa-facebook"></span></a>
+					<a href="#"><span class="fa-brands fa-twitter"></span></a>
+					<a href="#"><span class="fa-brands fa-instagram"></span></a>
+				</div>
+				
+			</div>
+		</footer>
+		<!-- FOOTER -->
+
+
+
+		<script>
+			let getshowmenu = document.getElementsByClassName('showmenu')[0];
+			let gethidemenu = document.getElementsByClassName('hidemenu')[0];
+			let getnav = document.getElementsByTagName('nav')[0];
+			getshowmenu.addEventListener('click', function(){
+				getnav.classList.add('active');
+				getnav.style.opacity = '1';
+				gethidemenu.style.opacity = '1';
+				gethidemenu.style.visibility = 'visible';
+			});
+			gethidemenu.addEventListener('click', function(){
+				getnav.classList.remove('active');
+				getnav.style.opacity = '0';
+				gethidemenu.style.opacity = '0';
+				gethidemenu.style.visibility = 'hidden';
+			});
+
+			function scollevent(){
+				var getheaderelement = document.getElementsByTagName('header')[0].classList;
+				if(document.documentElement.scrollTop > 100){
+					getheaderelement.add('fixed');
+				}else{
+					getheaderelement.remove('fixed');
+				}
+			}
+			window.onscroll = scollevent;
+			document.getElementById('footeryear').textContent = new Date().getFullYear();
+		</script>
+		<script>
+			jQuery(document).ready(function($){
+				var lightbox = $('.gallery a').simpleLightbox({ history: false});
+				inPageItems = [];
+				$('nav ul li a').each(function(i, item){
+					var elem = $(this);
+					item = {
+						refElement: $(elem.attr('href')),
+						parent: elem.parent()
+					}
+					inPageItems.push(item);
+				});
+				$('nav ul li a, a.logo').click(function(event){
+					event.preventDefault();
+					var target = $(this).attr('href');
+					$('html,body').animate({scrollTop: ($(target).offset().top-50)}, 'slow');
+					var getwindowwidth = $(window).width();
+					if(getwindowwidth < 1200){
+						$('nav').removeClass('active');
+						$('nav').css('opacity', '0');
+						$('a.hidemenu').css('visibility', 'hidden');
+						$('a.hidemenu').css('opacity', '0');
+					}
+				});
+				$(window).scroll(function(){
+					var top = $(document).scrollTop();
+					$.each(inPageItems, function(i, item){
+						if(top > item.refElement.offset().top-52){
+							if(!item.parent.hasClass('active')){
+								$('nav ul li').removeClass('active');
+								item.parent.addClass('active');
+							}
+						}else{
+							item.parent.removeClass('active');
+						}
+					});
+				});
+			});
+		</script>
+		<script src="js/simple-lightbox.jquery.js"></script>
+		<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const showMenu = document.querySelector('.showmenu');
+    const hideMenu = document.querySelector('.hidemenu');
+    const nav = document.querySelector('nav');
+
+    showMenu.addEventListener('click', function(e) {
+        e.preventDefault();
+        nav.style.display = 'block';
+    });
+
+    hideMenu.addEventListener('click', function(e) {
+        e.preventDefault();
+        nav.style.display = 'none';
+    });
+});
+</script>
+<!-- 在</body>标签前添加以下JavaScript代码 -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    try {
+        // 菜单控制
+        const showMenu = document.querySelector('.showmenu');
+        const hideMenu = document.querySelector('.hidemenu');
+        const nav = document.querySelector('nav');
+        
+        if (showMenu && hideMenu && nav) {
+            showMenu.addEventListener('click', function(e) {
+                e.preventDefault();
+                nav.classList.add('active');
+            });
+            
+            hideMenu.addEventListener('click', function(e) {
+                e.preventDefault();
+                nav.classList.remove('active');
+            });
+        }
+        
+        // 添加相应的CSS样式
+        const style = document.createElement('style');
+        style.textContent = `
+            nav { 
+                display: none; 
+            }
+            nav.active { 
+                display: block; 
+            }
+            @media (max-width: 768px) {
+                nav {
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    background: white;
+                    width: 100%;
+                    height: 100vh;
+                    padding: 2rem;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+        
+    } catch (error) {
+        console.error('Menu initialization error:', error);
+    }
+});
+</script>
+<!-- Template By: LayoutFlow, URL: https://layoutflow.com/  -->
